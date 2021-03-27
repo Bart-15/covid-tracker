@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+@media (min-width:961px){
+.container{
+    width: 80%;
+}
+}

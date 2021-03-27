@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+
+
+body {
+    background-color: #e1f0eb;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.title {
+    font-size: 40px;
+    /* font-family: 'Creepster', cursive; */
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.virus {
+    animation: rotation 3s infinite linear;
+    top: 10px;
+    position:relative;
+    height: 50px;
+}
+
+.loading{
+    position: relative;
+    top: 480px;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+} 
+
+@media (min-width:961px){
+    .title {
+        font-size: 100px;
+    }
+    .virus {
+        height: 100px;
+        margin: 0 5px;
+    }
+}
